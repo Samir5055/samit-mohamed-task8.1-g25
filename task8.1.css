@@ -1,0 +1,33 @@
+body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: #000000;
+      height: 400px;
+      background: url(road.avif) repeat-x;
+ 
+      position: relative;
+      top: 100px;
+    }
+
+   
+
+    .car {
+      position: absolute;
+      bottom: 225px;
+      left: -200px; /* Start off screen */
+      width: 200px;
+      animation-name: x;
+      animation-duration: 4s;
+      animation-delay: 4ms;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes x {
+    from{
+left: -200px;
+      }
+      to {
+       left: 100%;
+      }
+    }
